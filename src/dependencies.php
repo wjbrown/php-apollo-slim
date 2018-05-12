@@ -14,5 +14,9 @@ $container['phpView'] = function ($container) {
 
 };
 
+$container['httpCache'] = function() {
 
+    return new \Slim\HttpCache\CacheProvider();
+
+};
 
