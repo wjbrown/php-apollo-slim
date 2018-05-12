@@ -1,4 +1,4 @@
 
-const footer = document.getElementById('footer');
+var footer = document.getElementById('footer');
 
-footer.innerHTML = `<p>main.js loaded</p>`
+footer.innerHTML = '<p>main.js loaded</p>';

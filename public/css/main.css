@@ -1,3 +1,147 @@
+/**
+ * index.scss
+ * - Add any styles you want here!
+ */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700|Noto+Serif");
+*, *:after, *:before {
+  box-sizing: border-box; }
+
+body {
+  background: #eee;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #555;
+  line-height: 1.5; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-family: "Noto Serif", serif;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #222; }
+  h1 + p, h1 + ul, h1 + ol, h1 + h1, h1 + h2, h1 + h3, h1 + h4, h1 + h5, h1 + h6, h2 + p, h2 + ul, h2 + ol, h2 + h1, h2 + h2, h2 + h3, h2 + h4, h2 + h5, h2 + h6, h3 + p, h3 + ul, h3 + ol, h3 + h1, h3 + h2, h3 + h3, h3 + h4, h3 + h5, h3 + h6, h4 + p, h4 + ul, h4 + ol, h4 + h1, h4 + h2, h4 + h3, h4 + h4, h4 + h5, h4 + h6, h5 + p, h5 + ul, h5 + ol, h5 + h1, h5 + h2, h5 + h3, h5 + h4, h5 + h5, h5 + h6, h6 + p, h6 + ul, h6 + ol, h6 + h1, h6 + h2, h6 + h3, h6 + h4, h6 + h5, h6 + h6 {
+    margin-top: 20px; }
+  .page-header h1, .page-header h2, .page-header h3, .page-header h4, .page-header h5, .page-header h6 {
+    color: #111; }
+
 h1 {
-    color:#333;
-}
+  font-size: 40px; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 60px; } }
+
+h2 {
+  font-size: 36px; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 48px; } }
+
+h3 {
+  font-size: 26px; }
+  @media (min-width: 768px) {
+    h3 {
+      font-size: 36px; } }
+
+h4 {
+  font-size: 24px; }
+  @media (min-width: 768px) {
+    h4 {
+      font-size: 28px; } }
+
+h5 {
+  font-size: 22px; }
+
+h6 {
+  font-size: 18px; }
+
+a {
+  color: #111;
+  text-decoration: none; }
+  a:hover {
+    text-decoration: underline; }
+
+p, ul, ol {
+  margin: 0; }
+  p + p, p + ul, p + ol, p + h1, p + h2, p + h3, p + h4, p + h5, p + h6, ul + p, ul + ul, ul + ol, ul + h1, ul + h2, ul + h3, ul + h4, ul + h5, ul + h6, ol + p, ol + ul, ol + ol, ol + h1, ol + h2, ol + h3, ol + h4, ol + h5, ol + h6 {
+    margin-top: 20px; }
+
+.text-center {
+  text-align: center; }
+
+.container {
+  width: 100%;
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px; }
+
+.page-header {
+  padding: 60px 0 30px;
+  border-bottom: solid 1px #ddd; }
+
+.archive {
+  padding: 60px 0; }
+  @media (min-width: 768px) {
+    .archive {
+      padding-bottom: 120px; } }
+  .archive-article {
+    display: flex; }
+    @media (max-width: 767px) {
+      .archive-article {
+        flex-direction: column; } }
+    .archive-article.full {
+      flex-direction: column; }
+    .archive-article + .archive-article {
+      margin-top: 60px; }
+    @media (min-width: 768px) {
+      .archive-article-meta {
+        width: 360px;
+        padding-right: 30px;
+        border-right: solid 1px #ddd; } }
+    .full .archive-article-meta {
+      width: auto;
+      border: none;
+      padding: 0; }
+    @media (min-width: 768px) {
+      .archive-article-primary {
+        padding: 0 0 3px 30px; } }
+    .full .archive-article-primary {
+      padding: 0; }
+    .archive-article-title a {
+      color: inherit; }
+    .archive-article-thumbnail img {
+      max-width: 100%;
+      display: block;
+      border-radius: 3px; }
+      .full .archive-article-thumbnail img {
+        margin: 30px auto; }
+    .archive-article-date {
+      padding: 10px 0;
+      font-size: 16px;
+      font-style: italic;
+      color: #666;
+      line-height: 1.2; }
+      @media (min-width: 768px) {
+        .archive-article-date {
+          text-align: right; } }
+      .full .archive-article-date {
+        text-align: left; }
+      .archive-article-date .month-day, .archive-article-date .year {
+        white-space: nowrap; }
+        @media (min-width: 768px) {
+          .archive-article-date .month-day, .archive-article-date .year {
+            display: block; } }
+        .full .archive-article-date .month-day, .full .archive-article-date .year {
+          display: inline; }
+      @media (max-width: 767px) {
+        .archive-article-date .month-day:after {
+          content: ','; } }
+      .full .archive-article-date .month-day:after {
+        content: ','; }
+
+.not-found {
+  font-size: 200px;
+  color: #999;
+  font-weight: bold;
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */
