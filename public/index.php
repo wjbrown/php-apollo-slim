@@ -21,6 +21,6 @@ require SRC_PATH . DS . "handlers.php";
 require SRC_PATH . DS . "middleware.php";
 
 require SRC_PATH . DS . 'Routes' . DS . 'pages.php';
-require SRC_PATH . DS . 'Routes' . DS . 'api.php';
+require SRC_PATH . DS . 'Routes' . DS . 'posts.php';
 
 $app->run();

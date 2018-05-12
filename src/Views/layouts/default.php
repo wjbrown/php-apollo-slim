@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <title>Slim Kadmon</title>
+    <title>Apollo Slim</title>
+
     <link rel="stylesheet" href="/css/main.css">
 </head>
 <body>
